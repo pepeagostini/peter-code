@@ -3,64 +3,71 @@
 <head>
   <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <title>Easy Recipes</title>
 
 <style type="text/css" media="screen">
 
-  body
+  body , div
   {
-    background-color: green
-  }
-  .paragrah{
-    font-size: 15pt;
-    font-family: Arial;
-  }
+    background-color: white;
+    padding-top: 15px;
+    }
 
-
-.image {
-    height: 200px;
-    width: 200px;
+  h1{
+  color: black;
+  font-family: arial;
+ font-size: 36pt;
 
   }
-  .li{
-font-size: 12pt;
-    font-family: Arial;
-  }
 
-  .underline
-  {
-    text-decoration-line: underline;
-     font-weight: bold;
-     padding-bottom: 30px;
-  }
-
-  .padding
-  {
-    padding-bottom: 30px;
-  }
-
-ol li {/* first selector */
-  list-style-type:" 😃 ";
+h2{
+  text-decoration-line: underline;
 }
 
-  section > ul li {/* second selector */
-  list-style-type: upper-roman;
+
+
+header > div p, img{
+  text-align: justify;
+  width: 100%;
+  height: auto;
+
 }
 
-  header {
-    color:teal;
-  }
-  main{
-    color: black;
-  }
-  footer > ul li
-  {
-     list-style-type: lower-roman;
-   padding-top: 20px;
-  }
 
+main >div img {
+width: 100%;
+  height: auto;
+}
+
+footer > div ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+
+
+footer > div li {
+  padding: 5px 10px;
+  background-color: white;
+  border: 1px solid #DDDDDD;
+
+}
+
+footer > div li:before {
+    content: "•  ";
+    color: red;
+
+}
+footer > div{
+
+  padding-bottom: 10px;
+
+}
   @media screen and (max-width: 400px) {
   .left, .main, .right {
     width: 100%;
@@ -80,7 +87,7 @@ ol li {/* first selector */
 </style>
 </head>
 <body>
-  <div class="container" style="padding-top: 20px">
+  <div class="container">
 <div class="row-responsive">
        <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,20 +110,23 @@ ol li {/* first selector */
 </nav>
     </div>
     </div>
-<header style="padding-top: 30px">
+
+<header>
 
   <div class="container">
     <div class="row-responsive">
-  <div class="jumbotron">
-  <h1 class="underline">Welcome to <em>Peter</em> recipes.</h1>
+
+  <h1>Welcome to <em><b>Peter</b></em> recipes</h1>
+
+<img src="https://cdn6.recetasdeescandalo.com/wp-content/uploads/2019/05/Spaguetti-a-la-bolonesa-una-receta-de-pasta-para-triunfar.jpg" width="400px" height="300px" alt="">
 
   <!-- unordered list-->
-  <h2 class="padding">Spaghetti Bolognese easy</h2>
+  <h2>Spaghetti Bolognese easy</h2>
 
- <p class="paragrah"> This is an easy and fast version of the Italian Bolognese sauce. It is a mixture of mixed ground beef with onion and tomato puree over spaghetti. I love this meal because it is super easy to prepare and most people love it.</p>
+ <p> This is an easy and fast version of the Italian Bolognese sauce. It is a mixture of mixed ground beef with onion and tomato puree over spaghetti. I love this meal because it is super easy to prepare and most people love it.</p>
 
 
-    </div>
+
 
   </div>
 </div>
@@ -129,36 +139,11 @@ ol li {/* first selector */
   <div class="container">
   <div class="row-responsive">
   <div class="jumbotron li">
-      <h2 class="padding">Ingredients</h2>
-  <ol>
- <li>  1 tablespoon oil</li>
- <li> 1 medium can (350 grams) of tomato puree</li>
-    <!-- inner list-->
-    <ul>
-      <li>
-        Meanwhile, cook the pasta in a pot with boiling water and salt, until it is al dente, about 10 minutes. Drain and place inside a greased refractory.
-      </li>
-    </ul>
- <li> 1 onion, finely chopped 750 grams of ground beef and pork
-    Garlic salt and ground pepper, to taste</li>
-    <!-- inner list-->
-    <ul>
-      <li>Heat the butter and oil in a saucepan over medium heat. Sauté the onion for a couple of minutes, add the meat and season with garlic salt and ground pepper. Cook until golden brown and add the tomato puree. Cook over low heat until the meat has cooked and the mash has dried a little.</li>
-    </ul>
- <li>1/2 package (250 grams) of spaghetti</li>
-    <!-- inner list-->
-    <ul>
-      <li>Pour the Bolognese sauce on top and bake over medium heat for 10 to 15 minutes.</li>
-    </ul>
- <li> 1 stick (90 grams) of butter</li>
-  </ol>
-
+      <h2>Ingredients</h2>
 
   <!-- order list-->
 <section>
 
-
-  <h1 class="padding">Spaghetti Bolognese easy</h1>
   <ul>
   <li>1 stick (90 grams) of butter</li>
   <li>1 tablespoon oil</li>
@@ -183,11 +168,11 @@ Garlic salt and ground pepper, to taste</li>
 
     <!---Separation---->
 
-   <div>
-          <img class="image" src="https://i.imgur.com/27MIFbF.jpg" alt="Spaghetti">
+
+          <img src="https://d1uz88p17r663j.cloudfront.net/original/b95382a9e0df2a003692c6228d107909_Spagetti_a_la_bolonesa.jpg" alt="Spaghetti">
   <br>
-      &#128523 &#128523 &#128523 &#128523  &#128526
-    </div>
+
+
 
 </div>
 </div>
@@ -202,11 +187,24 @@ Garlic salt and ground pepper, to taste</li>
 
 <!---Comparation recipes--->
 
-<footer>
- <div class="container">
-<div class="row-responive>">
-     <div class="jumbotron">
-  <ul>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small indigo">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">More Recipes</h5>
+
+        <ul>
     <li><a href="https://www.recetasdeescandalo.com/spaghetti-a-la-bolonesa-una-receta-de-pasta-para-triunfar/">Scandal recipes</a></li>
     <li><a href="https://www.cocinacaserayfacil.net/espaguetis-a-la-bolonesa-italiana-receta/">Easy cook</a></li>
     <li><a href="https://www.conmishijos.com/actividades-para-ninos/recetas/espaguetis-a-la-bolonesa-receta-tradicional-italiana/">With my children</a></li>
@@ -215,10 +213,63 @@ Garlic salt and ground pepper, to taste</li>
 <li><a href="mailto:pedrotpereza@gmail.com">Email me</a></li>
        </ul>
 
-  </div>
-  </div>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+
+
+
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+
+
+
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+
+
+
+
+      </div>
+      <!-- Grid column -->
+
     </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="#"> Peter Recipes</a>
+  </div>
+  <!-- Copyright -->
+
 </footer>
+<!-- Footer -->
     </body>
 
 </html>
